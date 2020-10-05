@@ -16,7 +16,7 @@ const Registration = () => {
     const history = useHistory();
     const handleRegistration = () => {
         const user = {...loggedInUser, ...info};
-        fetch("http://localhost:5000/addUser", {
+        fetch("https://damp-wildwood-72836.herokuapp.com/addUser", {
             method: "POST",
             headers: {"Content-Type": "application/json"},
             body: JSON.stringify(user)

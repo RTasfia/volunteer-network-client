@@ -9,14 +9,14 @@ const VolunteerActivity = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
     const [activity, setActivity] = useState([]);
     useEffect(()=>{
-        fetch("http://localhost:5000/currentUser?email="+loggedInUser.email)
+        fetch("https://damp-wildwood-72836.herokuapp.com/currentUser?email="+loggedInUser.email)
         .then(res => res.json())
         .then(data => {
             setActivity(data)
         })
     },[])
     const deleteEvent = (id,event) => {
-        fetch(`http://localhost:5000/delete/${id}`,{
+        fetch(`https://damp-wildwood-72836.herokuapp.com/delete/${id}`,{
             method: "DELETE"
         })
         .then(res => res.json())

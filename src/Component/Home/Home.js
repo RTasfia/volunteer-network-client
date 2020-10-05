@@ -8,14 +8,14 @@ import Event from '../Event/Event';
 const Home = () => {
     const [event,setEvent] = useState([]);
     const clicked = () => {
-        fetch("http://localhost:5000/allEvents", {
+        fetch("https://damp-wildwood-72836.herokuapp.com/allEvents", {
             method: "POST",
             headers: {"Content-Type" : "application/json"},
             body: JSON.stringify(Fakedata)
         })
     }
     useEffect(()=> {
-        fetch('http://localhost:5000/events')
+        fetch('https://damp-wildwood-72836.herokuapp.com/events')
         .then(res => res.json())
         .then(data => {
             setEvent(data);

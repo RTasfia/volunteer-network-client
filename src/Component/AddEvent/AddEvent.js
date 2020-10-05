@@ -13,10 +13,14 @@ const AddEvent = () => {
 
     }
     const handleSubmit = () => {
-        fetch("http://localhost:5000/newEvent", {
+        fetch("https://damp-wildwood-72836.herokuapp.com/newEvent", {
             method: "POST",
             headers: {"Content-Type" : "application/json"},
             body: JSON.stringify(newEvent)
+        })
+        .then(res => res.json())
+        .then(data => {
+            console.log(data);
         })
         history.push("/home");
 

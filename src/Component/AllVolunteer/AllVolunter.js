@@ -7,7 +7,7 @@ import Volunteer from '../Volunteer/Volunteer';
 const AllVolunter = () => {
     const [volunteers, setVolunteers] = useState([]);
     const deleteEvent = (id,event) => {
-        fetch(`http://localhost:5000/delete/${id}`,{
+        fetch(`https://damp-wildwood-72836.herokuapp.com/delete/${id}`,{
             method: "DELETE"
         })
         .then(res => res.json())
@@ -20,7 +20,7 @@ const AllVolunter = () => {
     }
 
     useEffect(()=>{
-        fetch("http://localhost:5000/allUser")
+        fetch("https://damp-wildwood-72836.herokuapp.com/allUser")
         .then(res => res.json())
         .then(data => {
             setVolunteers(data)

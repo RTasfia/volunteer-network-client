@@ -25,7 +25,8 @@ const Home = () => {
 
     return (
         <div className="background">
-            <button onClick={clicked}>click</button>
+            {/* to add all event
+             <button onClick={clicked}>click</button> */}
             <NavbarMenu></NavbarMenu>
             <h3>I GROW BY HELPING PEOPLE IN NEED</h3>
             <div className="container">

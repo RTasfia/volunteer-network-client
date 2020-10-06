@@ -22,7 +22,6 @@ const Home = () => {
         })
 
     },[])
-    console.log("length",event.length);
 
     return (
         <div className="background">

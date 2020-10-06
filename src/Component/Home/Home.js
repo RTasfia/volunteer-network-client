@@ -22,9 +22,11 @@ const Home = () => {
         })
 
     },[])
+    console.log("length",event.length);
+
     return (
         <div className="background">
-            {/* <button onClick={clicked}>click</button> */}
+            <button onClick={clicked}>click</button>
             <NavbarMenu></NavbarMenu>
             <h3>I GROW BY HELPING PEOPLE IN NEED</h3>
             <div className="container">

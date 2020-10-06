@@ -15,7 +15,7 @@ const AddEvent = () => {
     const handleSubmit = () => {
         fetch("https://damp-wildwood-72836.herokuapp.com/newEvent", {
             method: "POST",
-            headers: {"Content-Type" : "application/json"},
+            headers: {"Content-Type": "application/json"},
             body: JSON.stringify(newEvent)
         })
         .then(res => res.json())

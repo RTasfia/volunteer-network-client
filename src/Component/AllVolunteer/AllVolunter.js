@@ -45,7 +45,7 @@ const AllVolunter = () => {
                 </div>
                 <div className="col-9 " style={{backgroundColor: "#F8FAFC"}}>
                     
-                    <div className="row">
+                    <div className="row" style = {{marginTop : "30px"}}>
                         <div className="d-flex flex-row justify-content-between col-12">
                             <h6>Name</h6>
                             <h6>EmailID</h6>
